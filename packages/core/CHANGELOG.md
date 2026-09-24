@@ -1,5 +1,64 @@
 # Changelog
 
+## [6.0.0](https://github.com/honeyvig/content-claims-pl-snapshot/compare/content-claims-v5.1.0...content-claims-v6.0.0) (2026-09-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* Client read interface and client claim types now use multihashes. Relation claim has been removed in favour of upcoming dag-index claim.
+* `@web3-storage/content-claims` tsconfig.json uses NodeNext ([#38](https://github.com/honeyvig/content-claims-pl-snapshot/issues/38))
+* allow specify parts in relation part inclusion
+* allow index CID to be sent with location claim
+* simplify read method return type
+
+### Features
+
+* `@web3-storage/content-claims` tsconfig.json uses NodeNext ([#38](https://github.com/honeyvig/content-claims-pl-snapshot/issues/38)) ([2875e8d](https://github.com/honeyvig/content-claims-pl-snapshot/commit/2875e8d99d762188019c3e99ce6163e7302b3201))
+* add `assert/equals` ([#22](https://github.com/honeyvig/content-claims-pl-snapshot/issues/22)) ([bddd948](https://github.com/honeyvig/content-claims-pl-snapshot/commit/bddd948db5e1628d20b4d31796690b40b654a720))
+* add descendant claim ([9afb9c0](https://github.com/honeyvig/content-claims-pl-snapshot/commit/9afb9c097d490c0e6ce4e9364a7b6f85343d89d7))
+* add index claim ([#66](https://github.com/honeyvig/content-claims-pl-snapshot/issues/66)) ([0bc19c9](https://github.com/honeyvig/content-claims-pl-snapshot/commit/0bc19c9108cf43d7c45390d6a1257eced81420ed))
+* add list method to claim store ([83e837e](https://github.com/honeyvig/content-claims-pl-snapshot/commit/83e837e5628e644a7e638d90940947f5b3cd76af))
+* add parts to relation claim ([95abc3c](https://github.com/honeyvig/content-claims-pl-snapshot/commit/95abc3c243d37a653b98bf1915b32361466c4889))
+* allow index CID to be sent with location claim ([8e7efa9](https://github.com/honeyvig/content-claims-pl-snapshot/commit/8e7efa9fbd5e0842680f08b55faf9d3c7d7cab6f))
+* allow specify parts in relation part inclusion ([dda837f](https://github.com/honeyvig/content-claims-pl-snapshot/commit/dda837f7177fc66ec2ab0acd126900f442e4637a))
+* clean up ([d1015d9](https://github.com/honeyvig/content-claims-pl-snapshot/commit/d1015d9b2960f750f0eb2b3a8a2d94b6870d4f3f))
+* **cli:** add descendant command ([f0581ae](https://github.com/honeyvig/content-claims-pl-snapshot/commit/f0581ae33e5a5aa7c6c88383be8b952e7155907e))
+* client claim reader ([5395620](https://github.com/honeyvig/content-claims-pl-snapshot/commit/5395620926a7c6da325a3b617d0fd9d8bba09bac))
+* ensure claim API is CID version agnostic ([#18](https://github.com/honeyvig/content-claims-pl-snapshot/issues/18)) ([1690c1f](https://github.com/honeyvig/content-claims-pl-snapshot/commit/1690c1f2bbd6d85a289fcb0ae6a8b524c9022160))
+* export decode claim function ([#12](https://github.com/honeyvig/content-claims-pl-snapshot/issues/12)) ([17018dc](https://github.com/honeyvig/content-claims-pl-snapshot/commit/17018dc9de8b14937fff9e5e4cf47bc5c0d55cb7))
+* initial commit ([e60ebe1](https://github.com/honeyvig/content-claims-pl-snapshot/commit/e60ebe1b00b11529bf726521a850cc43b7e0c478))
+* materialize claims from block index table ([33c46ff](https://github.com/honeyvig/content-claims-pl-snapshot/commit/33c46ff241f57b3259b1b0aac62a26c788d3faac))
+* publish content claims by multihash ([#61](https://github.com/honeyvig/content-claims-pl-snapshot/issues/61)) ([151f4a1](https://github.com/honeyvig/content-claims-pl-snapshot/commit/151f4a1461b8060fe33f6e5c1622bc6b02165c28))
+* store equals for both content and equals multihash ([#23](https://github.com/honeyvig/content-claims-pl-snapshot/issues/23)) ([715fcd5](https://github.com/honeyvig/content-claims-pl-snapshot/commit/715fcd5ddb219e77f8573df889f46183c55ce400))
+* store invocation CID ([2f3c9ba](https://github.com/honeyvig/content-claims-pl-snapshot/commit/2f3c9ba9b0f7fb1f969620353f23c09c43c23348))
+* upgrade to latest ucanto ([#30](https://github.com/honeyvig/content-claims-pl-snapshot/issues/30)) ([1323df1](https://github.com/honeyvig/content-claims-pl-snapshot/commit/1323df1a3c034805c2d08733be7349991971c68e))
+* wip claims endpoint ([e8e8f05](https://github.com/honeyvig/content-claims-pl-snapshot/commit/e8e8f05a0d659c8d541de5f464eded91d18a4245))
+
+
+### Bug Fixes
+
+* add linting and fix type errors ([#33](https://github.com/honeyvig/content-claims-pl-snapshot/issues/33)) ([5450a8b](https://github.com/honeyvig/content-claims-pl-snapshot/commit/5450a8bc207fb75b73a25ceed8d5091d0f95be65))
+* **client:** types for relation claim ([1267ad9](https://github.com/honeyvig/content-claims-pl-snapshot/commit/1267ad920c410745b540a05f765556b509b4194a))
+* dynamo stores ([9ecf969](https://github.com/honeyvig/content-claims-pl-snapshot/commit/9ecf969fafc9b8384c49fcf377710062dbb547b0))
+* examples on README ([805f666](https://github.com/honeyvig/content-claims-pl-snapshot/commit/805f66694e539dd750f0429da4069cd789903939))
+* export capability api in types ([#48](https://github.com/honeyvig/content-claims-pl-snapshot/issues/48)) ([6c8e5c9](https://github.com/honeyvig/content-claims-pl-snapshot/commit/6c8e5c915b0075b2bd19bb0839fb20e11850644b))
+* exports types ([1d413a8](https://github.com/honeyvig/content-claims-pl-snapshot/commit/1d413a87429c6b6bc589d52996430a94b61c9e76))
+* fix content-claims package not being importable by ts project by having package.json point to src alongside types ([#41](https://github.com/honeyvig/content-claims-pl-snapshot/issues/41)) ([9931249](https://github.com/honeyvig/content-claims-pl-snapshot/commit/9931249030e5c1a2b1616c2ba35a567a64667dee))
+* key content on multihash not CID ([#21](https://github.com/honeyvig/content-claims-pl-snapshot/issues/21)) ([7e737a7](https://github.com/honeyvig/content-claims-pl-snapshot/commit/7e737a7325bd295db186cc0eaacd7026fbb65986))
+* migrate repo ([#58](https://github.com/honeyvig/content-claims-pl-snapshot/issues/58)) ([d18a371](https://github.com/honeyvig/content-claims-pl-snapshot/commit/d18a371d27579ff41784c9a901bfff63f73a20a8))
+* re-export AnyAssertCap ([51d1f69](https://github.com/honeyvig/content-claims-pl-snapshot/commit/51d1f69aa2c9a97d9b90a581650f2adf6d29a526))
+* revert descendant claim ([1eada28](https://github.com/honeyvig/content-claims-pl-snapshot/commit/1eada2857b088e6aec81f9ecd5d5a9630597cbd6))
+* switch up example capability ([53b43e2](https://github.com/honeyvig/content-claims-pl-snapshot/commit/53b43e25374c75669a12facfd3ec312262e4d600))
+* trigger release ([1c76b16](https://github.com/honeyvig/content-claims-pl-snapshot/commit/1c76b16aeb4d48e43f7543eff2dabbe166442229))
+* trigger release to fix type exports ([#49](https://github.com/honeyvig/content-claims-pl-snapshot/issues/49)) ([f410f48](https://github.com/honeyvig/content-claims-pl-snapshot/commit/f410f486c29b2b4d51fa3b4675cc10c2956f6a2a))
+* types ([fe89dca](https://github.com/honeyvig/content-claims-pl-snapshot/commit/fe89dcaa59680fdcaaa3523c93a47c483c0065a5))
+* upgrade ucanto libs ([#55](https://github.com/honeyvig/content-claims-pl-snapshot/issues/55)) ([a8b4546](https://github.com/honeyvig/content-claims-pl-snapshot/commit/a8b4546c69a656e965cf39b1008b75eb6a006bf1))
+
+
+### Code Refactoring
+
+* simplify read method return type ([2af24e8](https://github.com/honeyvig/content-claims-pl-snapshot/commit/2af24e8efa72647c49702da020b6f7e3cd896b6d))
+
 ## [5.1.0](https://github.com/w3s-project/content-claims/compare/content-claims-v5.0.0...content-claims-v5.1.0) (2024-06-03)
 
 
